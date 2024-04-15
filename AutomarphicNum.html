@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // function main()
+    // {
+    //    let n=+(prompt('Enter Number'));
+    //    let sq=n*n;
+    //    let len=0;
+    //    let temp=sq;
+    //    while(sq>0)
+    //    {
+    //      len++;
+    //      sq=Math.trunc(sq/10);
+    //    }
+    //    if(len==1)
+    //      {
+    //         console.log('Not a automarphic number');
+    //         return;
+    //      }
+    //    let count=1;
+    //    for(i=2;i<=len;i++)
+    //    {
+    //        count=count*10
+    //    }
+    //    sq=temp;
+    //    let rem;
+    //    while(sq>0)
+    //    {
+    //      rem=sq%count;
+    //      break;
+    //    }
+    //    if(n==rem){
+    //     console.log("Given number is a automarphic number")
+    //    }
+    //    else
+    //    console.log("Given number is a not automarphic number")
+        
+    // }main();
+
+    // //------------------------------2nd Way------------------------------------------>
+    // function main()
+    // {
+    //     let n=+(prompt('Enter number'));
+    //     let sq=n*n;
+    //     let temp=n;
+    //     let d=1;
+    //     while(n>0)
+    //     {
+    //        d=d*10;
+    //        n=Math.trunc(n/10);
+    //     }
+    //     if(sq%d==temp)
+    //        console.log('Automarphic number')
+    //     else
+    //        console.log('Not a automarphic number');
+    // }main();
+
+
+
+    //----------------------Automarphic in a range------------------------------>
+
+    function ar()
+    {
+        let s=+(prompt('Enter s number'));
+        let e=+(prompt('Enter e number'));
+        for(i=s;i<=e;i++)
+        {
+            let n=i;
+            let sq=n*n;
+            let d=1;
+            let temp=n;
+            while(n>0)
+            {
+                d=d*10;
+                n=Math.trunc(n/10);
+            }
+            if(sq%d==temp)
+            {
+               console.log(i); 
+            }
+           
+        }
+    }ar();
+   </script> 
+</body>
+</html>

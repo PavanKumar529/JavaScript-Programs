@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+          let a=[2,5,7,8,3,1]
+          let b=a.sort() 
+          let key=+(prompt('Enter Element'))
+          let start=0;
+          let end=b.length-1;
+          while(start<=end)
+          {
+            let mid=Math.trunc((start+end)/2)
+            if(key==b[mid])
+            {
+                console.log('Element is found')
+                break;
+            }
+            else if(key>b[mid])
+              start=mid+1;
+            else
+               end=mid-1
+          }
+          if(start>end)
+           console.log("Element is not available");
+        }main()
+    </script>
+</body>
+</html>

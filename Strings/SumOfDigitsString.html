@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+            let s='i wa22nt job 16 ear42ly 10'
+            let ch=[...s];
+            let res=0;
+            let sum=0;
+            for(let i=0;i<ch.length;i++)
+            {
+                if(ch[i]>='0'&& ch[i]<='9')
+                    res=res*10+eval(ch[i])
+                else{
+                    if(res!=0)
+                    {
+                        sum=sum+res;
+                        res=0;
+                    }
+                }
+                if(i==ch.length-1)
+                {
+                    sum=sum+eval(res)
+                }
+               
+            }
+            console.log(sum)
+            console.log(`----------------`)
+
+        }main()
+    </script>
+</body>
+</html>

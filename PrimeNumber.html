@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+            // let n=+(prompt('Enter Number'));
+            // if(n<2)
+            //  {
+            //       console.log("Given number is not a prime number");
+            //       return;
+            //  }
+            //   for(i=2;i<=Math.trunc(n/2);i++)
+            //   {
+            //      if(n%i==0)
+            //      {
+            //         console.log('Given number is not a prime number');
+            //         return;
+            //      }
+            //   }
+            //   console.log('Given number is a prime number');
+
+            //2nd way
+        //    let n=+(prompt('Enter Number'));
+        //    let count=0;
+        //    for(let i=1;i<=n;i++)
+        //    {
+        //     if(n%i==0)
+        //     {
+        //         count++;
+        //     }
+        //    }
+        //    if(count==2)
+        //    {
+        //     console.log('Prime number');
+        //    }
+        //    else{
+        //     console.log('Not a prime');
+        //    }
+
+
+           //3rd way
+           let n=+(prompt('Enter number'));
+           if(n<2)
+           {
+            console.log('not a prime');
+            return;
+           }
+           let flag=true;
+           for(let i=2;i<=Math.trunc(n/2);i++)
+           {
+            if(n%i==0)
+            {
+                flag=false;
+                break;
+            }
+           }
+           if(flag)
+           {
+            console.log('Prime')
+           }
+           else
+             console.log('Not a prime');
+
+
+        }main();
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+            //---------------vowels and consonants-------------->
+            let s1='i love+ @India#$123'
+            let s4=s1.toLowerCase();
+            let ch=[...s4]
+            let vo='aeiou'
+            let v=0;
+            let con=0;
+            for(let i=0;i<ch.length;i++)
+            {
+                let c=ch[i]
+                if(c>='a'&& c<='z')
+                {
+                    if(c=='a'||c=='i'||c=='e'||c=='o'||c=='u')
+                    {
+                        v++;
+                    }
+                    else{
+                        con++;
+                    }
+                }
+            } 
+            console.log(`no of vowels=${v}`)
+            console.log(`no of consonants=${con}`)
+   
+   
+            console.log(`----------------`)
+
+            //------------------------sum of numbers----------->
+            let s2='Raja12 the great435'
+            
+            let sum=0;
+            for(let i=s2.length-1;i>=0;i--)
+            {  let e=s2.charAt(i)
+               if(e>='0'&& e<'9')
+               {
+                sum+=eval(e)
+               }
+            }
+            console.log('sum of numbers in a given string='+sum)
+            console.log(`----------------`)
+           //---------No of string occurance------------------------->
+           let k='kohli is very aggressive kohli plays very well'
+           let t=k.split(" ")
+           for(let i=0;i<t.length;i++)
+           {   let co=1;
+               for(let j=i+1;j<t.length;j++)
+               {
+                if(t[i]==t[j])
+                {
+                    co++;
+                    t[j]=' '
+                }
+               } if(t[i]!=' ')
+                  console.log(`${t[i]}=${co}`)
+           }
+
+            
+           //-----------Reverse-------------->
+        //    let s='Raja wants shula'
+        //    let a='';let b='';let c=''
+        //    let res=''
+        //    for(let i=s.length-1;i>=0;i--)
+        //    {
+        //        if(i<=3)
+        //         {
+        //             let r=s.charAt(i)
+        //             a+=r
+        //         }
+                
+        //        if( i>3 && i<=10)
+        //        {
+        //         let t=s.charAt(i)
+        //          b+=t
+        //        }  
+        //         if(i>10)
+        //         {
+        //             let v=s.charAt(i)
+        //          c+=v
+        //         }
+        //    }
+        //   res+=a+b+c
+        //   console.log(res)
+    
+    </script>
+</body>
+</html>

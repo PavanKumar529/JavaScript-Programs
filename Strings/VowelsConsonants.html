@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+          let s=prompt('Enter string')
+          let v='aeiou'
+          let count=0;
+          let c=0;
+          for(let i=0;i<s.length;i++)
+          { let flag=true;
+            for(let j=0;j<v.length;j++)
+            {
+                if(s.charAt(i)==v.charAt(j))
+                { 
+                    count++;
+                    flag=false;
+                }
+            }
+            if(flag)
+            c++;
+          }
+          console.log('No of vowels in a given string='+count)
+          console.log('No of consonants in a given string='+c)
+        }main()
+    </script>
+</body>
+</html>

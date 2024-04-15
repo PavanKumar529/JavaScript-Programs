@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let b = [1, 5, 9]
+        for (let i = b[0]; i <= b[b.length - 1]; i++)
+         {
+            let flag = true;
+            for (let j = 0; j < b.length; j++) {
+                if (b[j] == i) {
+                    flag = false;
+                    break;
+                }
+            } if (flag)
+                console.log(i)
+        }
+    </script>
+</body>
+
+</html>

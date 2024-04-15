@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+            let a=[23,45,24,88,56,12]
+            let b=[]
+            for(let i=0;i<a.length;i++)
+            {
+                let n=a[i]
+                let sum=0;
+                let s=0;
+                while(n>0)
+                {
+                    let rem=n%10;
+                    sum+=rem;
+                    if(sum>10){
+                           
+                    let r=sum%10;
+                    s+=r;
+                    sum=Math.trunc(sum/10);
+                    if(sum==0) sum=s;
+                    }
+                    n=Math.trunc(n/10)
+                }
+               if(sum<=9) b.push(sum)
+            }
+            console.log(b)
+        }main()
+    </script>
+</body>
+</html>

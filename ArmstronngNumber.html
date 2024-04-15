@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+        //     let n=+(prompt('Enter Number'));
+        //     let temp=n;
+        //     let sum=0;
+        //     let len=0;
+        //     while(n>0)
+        //     {
+        //         len++;
+        //         n=Math.trunc(n/10)
+        //     }
+        //     n=temp;
+        //    while(n>0)
+        //    {
+        //     let rem=n%10;
+        //     let fact=1;
+        //     for(i=1;i<=len;i++)
+        //     {
+        //        fact=fact*rem;
+        //     }sum+=fact;
+        //     n=Math.trunc(n/10)
+        //    }
+        //    if(temp==sum)
+        //      console.log('Armstrong')
+        //     else
+        //        console.log('Not an armstrong number');
+
+
+        //-----------------------------ArmStrong Number------------------------------->
+
+         let s=+(prompt('Enter s number'));
+         let e=+(prompt('Enter e number'));
+         for(i=s;i<=e;i++)
+         {
+            let n=i;
+            let temp=n;
+            let length=0;
+            while(n>0)
+            {
+               length++;
+               n=Math.trunc(n/10)
+            }
+            n=temp;
+            let sum=0;
+            while(n>0)
+            {
+                let rem=n%10;
+                let fact=1;
+                for(j=1;j<=length;j++)
+                {
+                    fact*=rem;
+                }sum=sum+fact;
+                n=Math.trunc(n/10)
+            }
+            if(temp==sum)
+             console.log(i);
+         }
+
+        }main();
+    </script>
+</body>
+</html>

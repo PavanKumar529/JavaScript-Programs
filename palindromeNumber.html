@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function main()
+        //{
+            // let n=+(prompt('Enter Number'));
+            // let temp=n;
+            // let reverse=0;
+            // while(n>0)
+            // {
+            //     let rem=n%10;
+            //     reverse=reverse*10+rem;
+            //     n=Math.trunc(n/10)
+            // }
+            // if(temp==reverse)
+            //   console.log('Palindrome Number')
+            // else
+            //   console.log('Not a palindrome number');
+     //}main();
+
+
+       //--------------------------------palindrome in a given range---------------->
+        
+         //------------Next palindrome nu-------------------->
+        
+           a();
+          function a()
+          {
+             let n=+(prompt('Enter Number'));
+             main(n);
+
+         }
+         function main(s)
+         {   
+            let num=s;
+            let temp=num;
+            let reverse=0
+            let count=0;
+            while(num>0)
+            {
+                let rem=num%10;
+                reverse=reverse*10+rem;
+                num=Math.trunc(num/10);
+            }
+            if(temp==reverse)
+            {
+                console.log(s);
+                return;
+            }
+            else{
+                   main(s+1);
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

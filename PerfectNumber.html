@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+            // let n=+(prompt('Enter number'));
+            // let sum=0;
+            // for(let i=1;i<=Math.trunc(n/2);i++)
+            // {
+            //     if(n%i==0)
+            //     {
+            //         sum=sum+i;
+            //     }
+            // }
+            // if(n==sum)
+            // {
+            //     console.log('Perfect Number')
+            // }
+            // else
+            // {
+            //     console.log(' not a Perfect Number')
+            // }
+
+            //-----------------------------Print perfect------------------------->
+            let s=+(prompt('Enter starting number'));
+            let e=+(prompt('Enter ending number'));
+            for(let i=s;i<=e;i++)
+            {
+                let n=i;
+                let sum=0;
+                  for(let j=1;j<=Math.trunc(n/2);j++)
+                {
+                     if(n%j==0)
+                     {
+                        sum=sum+j;
+                     }
+                }
+                if(n==sum){
+                    console.log(i);
+                }
+            }
+        }main();
+    </script>
+</body>
+</html>

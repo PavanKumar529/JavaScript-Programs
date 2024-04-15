@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+        //   let n=+(prompt("Enter Number"));
+        //   let sq=n*n;
+        //   let sum=0;
+        //      while(sq>0)
+        //      {
+        //         let rem=sq%10;
+        //         sum=sum+rem;
+        //         sq=Math.trunc(sq/10);
+        //      }
+        //      if(n==sum)
+        //      console.log("Given number is a neon number")
+        //      else
+        //      console.log("Given number is a not neon number")
+
+        //--------------------------------------Print Neon number in a given range------------------------------------>
+        let s=+(prompt('Enter s number'))
+        let e=+(prompt('Enter e number'))
+        for(let i=s;i<=e;i++)
+        {
+            let n=i;
+            let sq=n*n;
+            let sum=0;
+            while(sq>0)
+            {
+                let rem=sq%10;
+                sum=sum+rem;
+                sq=Math.trunc(sq/10)
+            }
+            if(i==sum)
+               console.log(i);
+        }
+    }main();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+        //   let n=+(prompt('Enter number'));
+        //   let temp=n
+        //   let sum=0;
+        // while(n>0)
+        // {
+        //     let rem=n%10;
+        //     sum=sum+rem;
+        //     n=Math.trunc(n/10);
+        // }
+        // n=temp;
+        // let mul=1;
+        // while(n>0)
+        // {
+        //     let rem=n%10;
+        //        mul=mul*rem;
+        //        n=Math.trunc(n/10);
+        // }
+        // let Total=mul+sum;
+        // if(temp==Total)
+        //   console.log('Special Number')
+        // else
+        //   console.log('Not a  special Number');
+
+
+        //--------------------------------special Number in a given range------------------------------------->
+        let s=+(prompt('Enter s number'));
+        let e=+(prompt('Enter e number'));
+        for(let i=s;i<=e;i++)
+        {
+            let n=i;
+            let temp=n;
+            let add=0;
+            let product=1;
+            let Total=0;
+            while(n>0)
+            {
+                let rem=n%10;
+                add=add+rem;
+                product=product*rem;
+                n=Math.trunc(n/10)
+            }
+            Total=Total+product+add;
+            if(temp==Total)
+              console.log(i);
+        }
+    }main();
+    </script>
+</body>
+</html>

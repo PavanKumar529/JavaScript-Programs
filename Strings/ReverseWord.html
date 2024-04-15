@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+           let s='I love you Raja'
+           let s1=s.split(' ')
+           //console.log(s1)
+           let  output=''
+           for(let i=0;i<s1.length;i++)
+           {
+              let res=s1[i]
+              let rev=''
+              for(let j=res.length;j>=0;j--)
+              {
+                    rev=res.charAt(j)
+              }
+              output+=rev+' '
+
+           }
+           console.log(output)
+        }main();
+    </script>
+</body>
+</html>

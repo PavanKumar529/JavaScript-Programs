@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {    //-----------------------------------Filter banana--------------------------------->
+        //     s='banana'
+        //    let res=''
+        //    res+=s.charAt(0) 
+        //    for(let i=0;i<s.length;i++)
+        //    {      
+        //          let flag=true;
+        //         for(let j=0;j<res.length;j++)
+        //         {
+        //               if(s.charAt(i)==res.charAt(j))
+        //               {
+        //                       flag=false;
+        //               }
+        //         }
+        //         if(flag) res+=s.charAt(i)
+        //    }
+        //    console.log(res)
+        //    // console.log(`-------------------`) 
+           
+        //    //--------------------------------------------count of characters----------------------------------------->
+           
+        //    for(let j=0;j<res.length;j++)
+        //    {    let count=0
+        //          for(let i=0;i<s.length;i++)
+        //         {    
+        //             if(res.charAt(j)==s.charAt(i))
+        //             {
+        //                 count++;j
+        //             }
+                           
+        //         }
+               
+        //          console.log(`${res.charAt(j)}=${count}`)
+        //    }
+                 
+        // //    console.log(`-------------------`) 
+        // //    //---------------------------------------------Maxi and mini occurance--------------------->
+        // //    let max=0;
+        // //    let min=1;
+        // //    for(let j=0;j<res.length;j++)
+        // //    {    let count=0
+                 
+        // //          for(let i=0;i<s.length;i++)
+        // //         {    
+        // //             if(res.charAt(j)==s.charAt(i))
+        // //             {
+        // //                 count++;
+        // //             }
+                           
+        // //         }
+        //          if(count>max)
+        //             max=count
+        //         if(count<min)
+        //             min=count
+
+        //     }
+        //     console.log(`Minimum occurance=`+min)
+        //     console.log(`Maxmum occurance=`+max)
+            //---------------------------------may tmies occures-------------------------------------------->
+        //    let  s='banana'
+        //     let ch=[...s]
+        //     for(let i=0;i<ch.length;i++)
+        //     {
+        //        let count=1;
+        //        for(let j=i+1;j<ch.length;j++)
+        //        {
+        //          if(ch[i]==ch[j])
+        //          {
+        //             count++;
+        //             ch[j]=' '
+        //          }
+        //         } if(ch[i]!=' ')
+        //            console.log(`${ch[i]}=`+count)
+        //     }
+
+        //-----------------------------------------------max min occurance--------------->
+        // let s='aparanji'
+        // // let max=0;
+        //  let ch=[...s];let rs=''
+        // for(let i=0;i<=ch.length;i++)
+        // {    let count=1
+        //     for(let j=i+1;j<ch.length;j++)
+        //     {
+        //         if(ch[i]==ch[j])
+        //         count++
+        //     }
+        //     if(count>max)
+        //     {
+        //       max=count;
+        //       rs=ch[i]
+        //     }
+        // }console.log(rs+'='+max)
+
+
+        //------max------->
+        // let min=ch.length;
+         
+        // for(let i=0;i<=ch.length;i++)
+        // {    let count=1
+        //     for(let j=i+1;j<ch.length;j++)
+        //     {
+        //         if(ch[i]==ch[j])
+        //         count++
+        //     }
+        //     if(count<min)
+        //     {
+        //       min=count;
+        //       rs=ch[i]
+        //     }
+        // }console.log(rs+'='+min)
+        //---------------substring in my name---------------------->
+        // let a='aparanji'
+        // let res=''
+        // for(let i=0;i<a.length;i++)
+        // {
+        //     for(let j=i+1;j<a.length;j++)
+        //     {
+        //         res=a.slice(i,j+1)
+        //         console.log(res)
+        //     }
+        // }
+
+        //---------------first non-reapting character-------------->
+
+
+        //----program to find vowels in given string------------------>
+        let a='aparanji'
+        let v='aeiou'
+        let count=0;
+        let c=0;
+        for(let i=0;i<a.length;i++)
+        {   let flag=true;
+            for(let j=0;j<v.length;j++)
+            {
+                if(a.charAt(i)==v.charAt(j))
+                {
+                    count++;
+                    flag=false;
+                }   
+             }
+             if(flag)
+              c++;
+        }
+        console.log("No of vowels in string="+count)
+        console.log("No of consonants in string="+c)
+        }main()
+    </script>
+</body>
+</html>

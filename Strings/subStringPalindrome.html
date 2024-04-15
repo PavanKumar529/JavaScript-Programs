@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main()
+        {
+           let s=prompt('Enter the string')
+           for(let a=0;a<s.length;a++)
+           {  let res;
+               for(let b=a+1;b<s.length;b++)
+               {
+                  res=s.slice(a,b+1)
+                  let rev=''
+                  for(let i=res.length-1;i>=0;i--)
+                  {
+                      rev+=res.charAt(i)
+                  }
+                   if(res==rev)
+                    console.log(res)
+                }
+              
+            }
+        }main();
+    </script>
+</body>
+</html>

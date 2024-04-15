@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //function ispalindrome(s){
+        //     let j=0;
+        //     let k=s.length-1;
+        //     let flag;
+        //     while(k>j){
+        //         flag=true;
+        //         if(s.charAt(j)===s.charAt(k)){
+        //             k--;
+        //             j++;
+
+        //         }else{
+        //             flag=false;
+        //             return flag;
+        //         }
+                
+        //     }
+        //     if(flag){
+        //         return true;
+        //     }
+        // }
+        
+        //function main()
+        // {
+              let s='aparanji'
+        //     // let res=s.toUpperCase()
+        //     // console.log(res)
+        //     // let a='KOHLI'
+        //     // let rs=a.toLowerCase()
+        //     //  console.log(rs)
+        //     let s=prompt('Enter string')
+            
+            for(let i=0;i<s.length;i++)
+            {
+                let res=''
+                for(let j=i+1;j<s.length;j++)
+                {
+                    res+=s.slice(i,j+1)
+                    if(ispalindrome(res)){
+                        console.log(res)    ;
+                    }
+                    let rev=''
+                    for(let a=res.length;a>=0;a--)
+                    {
+                        rev+=res.charAt(a)
+                    }
+                    if(res==rev) console.log(res)
+                }
+            }
+
+        // }main()
+
+        function main()
+        {
+            
+
+        }main()
+    </script>
+</body>
+</html>

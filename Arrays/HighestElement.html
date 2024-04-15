@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function main() {
+            //    let a=[7,3,4,1,2,8,9]
+            //    let max=a[0]
+            //    let min=a[1]
+            //    for(let i=0;i<a.length;i++)
+            //    {
+            //      if(max<a[i])
+            //      {
+            //         max=a[i]
+            //      }
+            //      else if(min>a[i])
+            //      {
+            //          min=a[i]
+            //      }
+            //    }
+            //    console.log("Maximum="+max);
+            //    console.log("Minimum="+min);
+            //    console.log(`--------------`)
+
+            let b = [2, 9, 8, 1, 4, 5]
+            let Max = b[0]
+            let Min = b[0]
+            for (let i = 0; i < b.length; i++) {
+                if (Max < b[i])
+                    Max = b[i]
+                if (Min > b[i])
+                    Min = b[i]
+            }
+            let secMax = b[0];
+            let secMin = b[0];
+            for (let j = 0; j < b.length; j++) {
+                if (secMax < b[j] && b[j] != Max)
+                    secMax = b[j]
+                if (secMin > b[j] && Min != b[j])
+                    secMin = b[j]
+            }
+            console.log("Second Maximum=" + secMax)
+            console.log("Second Minimum=" + secMin)
+            //console.log('---2nd way of secMax and secMin ---')
+
+            //--------------2nd way------------------------------->
+            //   let k=[5,9,4,2,6,1,8]
+            //   for(let i=0;i<k.length;i++)
+            //   {
+            //     for(let j=0;j<k.length-1;j++)
+            //     {
+            //        if(k[j]>k[j+1])
+            //        {
+            //         let temp=k[j]
+            //         k[j]=k[j+1]
+            //         k[j+1]=temp;
+            //        }
+            //     }
+            //   }
+            //   console.log('Second Maximum='+k[k.length-2])
+            //   console.log('Second Minimum='+k[1])
+
+            //------------------------max------------------------------>
+
+            let a = [0, 1, 2, 3, 4, 5, 6, 7]
+            let max1 = 0;
+            let max2 = 0;
+            for (let i = 0; i < a.length; i++) 
+            {
+                
+            }
+
+        } main()
+    </script>
+</body>
+
+</html>
